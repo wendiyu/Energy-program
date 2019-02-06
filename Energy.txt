@@ -1,0 +1,25 @@
+#
+#Created by: Wendi Yu
+#Created on: Feb-06-2019
+#
+#Calculate This program whatever mass (kg) the user inputs to energy (J)
+
+import math
+
+mass = float(input("Enter the mass of an object in kg : "))
+
+#Constant
+LIGHTSPEED = 299800000
+
+# mass can not be negative
+
+if (mass > 0):
+
+  energy = mass * math.pow(LIGHTSPEED, 2)
+
+  print("If " + str(mass) + " kg of energy was converted to Joule (J). It will produce " + str(energy) + " J of energy.")
+  
+else:
+  print(" Invaild number! Please, try other numbers")
+
+input()
